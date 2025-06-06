@@ -15,28 +15,33 @@ UPLOAD_FOLDER = 'static/uploads'
 HISTORY_FILE = 'upload_history.json'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
+import os
 import requests
 
-def download_file(url, dest):
-    if not os.path.exists(dest):
-        print(f"Downloading model from {url}...")
-        response = requests.get(url)
-        with open(dest, 'wb') as f:
-            f.write(response.content)
-        print("Download complete.")
-    else:
-        print(f"Model file {dest} already exists.")
-
-MODEL_URL = 'https://drive.google.com/uc?export=download&id=1sGxxq3F9T-GdboMQ5knptNlHk2_6-rbb'
 MODEL_PATH = 'model/my_model.keras'
+MODEL_URL = 'https://github.com/ShibagniBhattacharjee06/plant-stress-app/releases/download/model-v1/my_model.keras'
 
-os.makedirs('model', exist_ok=True)
-download_file(MODEL_URL, MODEL_PATH)
+def download_model():
+    if not os.path.exists('model'):
+        os.makedirs('model')
 
-# Now load the model after download is ensured
-model = tf.keras.models.load_model(MODEL_PATH)
+    if not os.path.exists(MODEL_PATH):
+        print("Downloading model from GitHub release...")
+        response = requests.get(MODEL_URL, stream=True)
+        if response.status_code == 200:
+            with open(MODEL_PATH, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    f.write(chunk)
+            print("Model downloaded successfully.")
+        else:
+            raise Exception("Failed to download model.")
+
+download_model()
+
 
 # Load your model
+model = tf.keras.models.load_model(MODEL_PATH)
+
 model = tf.keras.models.load_model('model/my_model.keras')
 
 labels = {0: 'Healthy', 1: 'Powdery', 2: 'Rust'}
