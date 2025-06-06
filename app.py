@@ -39,14 +39,14 @@ def download_model():
 download_model()
 
 
-# Load your model
+# loading the model after downloading from the releases 
 model = tf.keras.models.load_model(MODEL_PATH)
 
 model = tf.keras.models.load_model('model/my_model.keras')
 
 labels = {0: 'Healthy', 1: 'Powdery', 2: 'Rust'}
 
-# Remedy videos URLs (YouTube embeds or links)
+
 remedy_videos = {
     'Healthy': None,
     'Rust': "https://www.youtube.com/embed/AKY_pelBZek",
@@ -76,13 +76,13 @@ def predict_stress(image_path):
 
 def send_email_alert(label, confidence, image_path):
     # Customize these with your email details
-    EMAIL_ADDRESS = 'bhattacharjeesagshi1234@gmail.com'
+    EMAIL_ADDRESS = 'senderemail@gmail.com' #change the email as the sender email of your choice 
     EMAIL_PASSWORD = 'tvpm uaif eeyx tyof'  # Use app password for Gmail
     
     msg = EmailMessage()
     msg['Subject'] = f'Plant Stress Alert: {label}'
     msg['From'] = EMAIL_ADDRESS
-    msg['To'] = 'bhattacharjeeshibagni85@gmail.com'  # Change to your target email
+    msg['To'] = 'receiver@gmail.com'  # Change to the email you want to send the mail this is temporary we will update it with login system for more comfortable use 
     
     body = f"""
     Stress detection alert:
@@ -141,13 +141,13 @@ def index():
 
             label, confidence, suggestion = predict_stress(save_path)
 
-            # Save upload history
+            # Saves uploaded history
             save_history(filename, label, confidence)
 
-            # Send email alert (optional, comment if you want)
+            # Sends email alert 
             send_email_alert(label, confidence, save_path)
 
-            # Pass video URL
+            # Passes video URL
             video_url = remedy_videos.get(label)
 
             return render_template('index.html', filename=filename, label=label,
