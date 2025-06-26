@@ -8,7 +8,7 @@ What makes this project uniquely powerful is its integration with an IoT-based A
 
 > 🎥 **DEMO VIDEO: https://drive.google.com/file/d/1gnx502asPW7duXmObUVft5g4DBHMJE10/view?usp=sharing**
 >
-> ** IOT: https://drive.google.com/file/d/1h2DrvrxcVo3uGX7RqTAc2h5XjZ2U4wk4/view?usp=sharing**
+> **IOT: https://drive.google.com/file/d/1h2DrvrxcVo3uGX7RqTAc2h5XjZ2U4wk4/view?usp=sharing**
 
 > 🔗 **LIVE LINK: https://agri-guard-infographic.vercel.app/**
 
