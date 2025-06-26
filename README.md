@@ -1,45 +1,48 @@
-# 🌿 Plant Stress Detection Using CNN
+# 🌿 Smart Crop Health Monitoring Using CNN and IoT-Enabled Agri-Guard Framework
 
-## Project Description
+## 🚀 Project Description
 
-This repository presents a complete deep learning-powered system for the automated classification of plant leaf conditions, addressing the critical challenge of early disease detection in agriculture. At the core of the system is a custom-built Convolutional Neural Network (CNN), trained to identify three classes of leaf health: Healthy, Rust-infected, and Powdery Mildew-infected. The model is encapsulated within a responsive Flask web application, offering users a seamless interface to upload images, receive real-time predictions, and access targeted treatment suggestions. 
+Smart agriculture calls for smart solutions, and this project—Smart Crop Health Monitoring Using CNN and IoT-Enabled Agri-Guard Framework—is designed to meet that challenge. It combines the power of computer vision and real-time environmental sensing to identify plant diseases and assess crop stress early, giving farmers a proactive edge. At its core, the system uses a Convolutional Neural Network (CNN) trained to detect visual symptoms of leaf stress—specifically Healthy, Rust-infected, and Powdery Mildew-infected conditions. 
 
-The pipeline ensures consistency through rigorous preprocessing and data augmentation techniques. It is optimized not only for accuracy but also for performance, making it suitable for deployment in edge environments or low-bandwidth scenarios. The interface is lightweight, browser-accessible, and designed to be intuitive for end-users, regardless of technical expertise.
+What makes this project uniquely powerful is its integration with an IoT-based Agri-Guard module, which continuously monitors soil moisture, humidity, temperature, and rainfall using sensors connected to an ESP32 microcontroller. All this comes together in a user-friendly Flask web application where users can upload leaf images, check real-time sensor readings, receive immediate disease predictions, and even get treatment recommendations—all from one place.
 
-## Project Vision
+> 🎥 **[https://drive.google.com/file/d/1gnx502asPW7duXmObUVft5g4DBHMJE10/view?usp=sharing]**
 
-This project was developed with the vision of bridging the divide between advanced machine learning techniques and practical agricultural deployment. The primary aim is to create a system that can augment traditional plant disease management practices by providing intelligent, automated, and data-driven insights directly to farmers, agronomists, and researchers. In a world where food security increasingly relies on precision agriculture, the integration of AI into field-ready tools holds transformative potential. 
+> 🔗 **[https://agri-guard-infographic.vercel.app/]**
 
-By embedding a performant deep learning model into a web-accessible, user-centered platform, this work offers a prototype that aligns with the broader goals of sustainable agriculture, reduced crop loss, and smarter, faster decision-making in the field.
+---
 
-## Future Scope
+## 🎯 Project Vision
 
-Looking ahead, the system is poised for a range of enhancements that could expand both its reach and impact. One of the most promising directions is to migrate the model to mobile-first platforms, enabling offline inference using TensorFlow Lite or similar frameworks, making it suitable for remote areas with limited connectivity. The incorporation of voice-based interfaces and multilingual support could further enhance accessibility for a wider audience, particularly in rural and non-English-speaking regions.
+This project was built with the aim of making advanced technology like deep learning and IoT not only accessible but also useful in rural and agricultural settings. Instead of simply running predictions in a lab setting, this system was envisioned as a deployable, real-world tool that farmers and agricultural workers could rely on. Whether it’s detecting powdery mildew before it spreads or being alerted to low soil moisture levels, the platform is designed to help users take faster, smarter actions that can preserve crop health and improve yield outcomes. Ultimately, the project seeks to push precision farming toward mainstream adoption, especially in regions where it is most needed.
 
-A robust cloud integration could facilitate continuous learning through real-time data feedback, while an expanded dataset encompassing more crop species and diverse infection patterns would improve generalizability. Coupling the application with IoT-enabled sensors or drone-based imaging systems would elevate it to a fully autonomous crop monitoring solution. These directions all converge on a singular goal: delivering an intelligent, scalable, and field-deployable system for plant stress detection and management.
+---
 
-## Key Features
+## 🌱 Future Scope
 
-The system encapsulates a full-stack machine learning deployment cycle—from dataset preprocessing and model training to API integration and UI/UX design. At its core, the CNN architecture has been designed for high-resolution image classification with minimal computational overhead. The web interface supports image input through drag-and-drop or file selection, after which the backend handles prediction, result rendering, and history logging. Users receive immediate feedback in the form of predicted class labels, corresponding care recommendations, and optional access to supplementary treatment videos.
+Looking forward, the Agri-Guard system can be expanded in several impactful ways. One major direction is the addition of automated irrigation control, where moisture and rainfall data would directly influence water flow, helping prevent both under- and over-watering. Migrating the model to mobile devices using frameworks like TensorFlow Lite will also allow offline use, bringing this technology to remote farms with little or no internet connectivity. 
 
-The application also includes support for email notifications, allowing users to receive prediction results directly in their inbox for later reference or expert review. The backend is modular and maintainable, facilitating easy upgrades to newer model architectures such as EfficientNet or MobileNet as needed. The front-end experience remains simple yet effective, ensuring that users from non-technical backgrounds can engage with the system effortlessly.
+Further plans include integrating SMS-based alerts, multilingual voice support, and cloud dashboards for centralized farm monitoring. Perhaps most significantly, incorporating weather data to forecast disease likelihoods could empower farmers with preventive spraying schedules and long-term crop planning tools. The goal is to evolve Agri-Guard into an intelligent assistant for every farmer, seamlessly blending AI with hands-on decision-making.
 
-- 🌱 Classifies leaf images into Healthy, Rust, or Powdery Mildew
-- 🧠 Built using a compact yet powerful CNN model
-- 🖼️ Real-time image upload and classification
-- 💬 Provides actionable treatment suggestions
-- 💌 Optional email alerts with prediction details
-- 📊 Maintains prediction history for user reference
-- 🔧 Easily deployable on low-resource devices and browsers
+---
 
+## 🔧 Key Features
 
-## Web Application Screenshot
+The system is thoughtfully designed to serve as a one-stop solution for crop monitoring. The CNN-based classification model identifies the disease condition of plant leaves with high accuracy and displays tailored treatment suggestions. Alongside this, the IoT module constantly collects environmental data which is visualized through a live dashboard. This creates a dual-layered monitoring experience: one visual and one environmental.
 
-![image](https://github.com/user-attachments/assets/743a4893-32f4-453e-9a8f-4444f8aad79e)
-![image](https://github.com/user-attachments/assets/c1e63eb8-00a6-4a26-ae93-c33d9c65e4e4)
-![image](https://github.com/user-attachments/assets/7680dd28-472a-4d62-9db5-09a591529577)
-![image](https://github.com/user-attachments/assets/0ebc0eed-1d43-4284-bb37-512e1e822905)
+Users interact with the system through a clean, web-based interface where they can upload images and access instant results. The interface also supports email notifications, so users can receive their diagnosis and suggestions straight to their inbox. Real-time graphs and sensor readings make it easy to monitor field conditions at a glance, and the system maintains prediction history for future review.
+ ![image](https://github.com/user-attachments/assets/5bd0a9a9-6461-4102-bffb-b9c4d5778cf1)
+![image](https://github.com/user-attachments/assets/0d3a4665-576a-4c3b-8edf-5cfda110e9d9)
+![image](https://github.com/user-attachments/assets/bc68b461-1f39-4e86-99cc-97a490c24f0f)
+![image](https://github.com/user-attachments/assets/16524383-25ca-48de-9461-38d062dfb29f)
+![image](https://github.com/user-attachments/assets/716d818d-84c5-4489-b5f8-9c47df6ccd0e)
+![image](https://github.com/user-attachments/assets/717bcb26-4bb0-4e69-b661-32f1e1a6a8d4)
+![image](https://github.com/user-attachments/assets/8b11f7ca-2b60-473e-a1b6-5e02f7a0f7cc)
 
+---
 
+## 📌 Scope
 
+Agri-Guard addresses several real-world gaps in conventional farming practices. Traditionally, most disease management strategies begin only after visible symptoms appear. By that time, the infection may have already reduced crop health or spread. This system changes the game by enabling early detection based on both visual data and environmental factors, allowing action to be taken before the damage is done.
 
+The integration of sensor-based monitoring also tackles the issue of inefficient resource usage. Instead of watering crops on a fixed schedule, the system can alert the user based on actual soil conditions and expected rainfall. This reduces water waste and prevents conditions like root rot or fungal outbreaks caused by overwatering. Furthermore, by digitizing the monitoring process, Agri-Guard brings critical real-time data into the hands of farmers and agricultural experts, enabling informed decision-making and moving the industry toward a more sustainable, data-driven future.
