@@ -31,6 +31,9 @@ Further plans include integrating SMS-based alerts, multilingual voice support, 
 The system is thoughtfully designed to serve as a one-stop solution for crop monitoring. The CNN-based classification model identifies the disease condition of plant leaves with high accuracy and displays tailored treatment suggestions. Alongside this, the IoT module constantly collects environmental data which is visualized through a live dashboard. This creates a dual-layered monitoring experience: one visual and one environmental.
 
 Users interact with the system through a clean, web-based interface where they can upload images and access instant results. The interface also supports email notifications, so users can receive their diagnosis and suggestions straight to their inbox. Real-time graphs and sensor readings make it easy to monitor field conditions at a glance, and the system maintains prediction history for future review.
+
+
+
  ![image](https://github.com/user-attachments/assets/5bd0a9a9-6461-4102-bffb-b9c4d5778cf1)
 ![image](https://github.com/user-attachments/assets/0d3a4665-576a-4c3b-8edf-5cfda110e9d9)
 ![image](https://github.com/user-attachments/assets/bc68b461-1f39-4e86-99cc-97a490c24f0f)
