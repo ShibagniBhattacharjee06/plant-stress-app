@@ -6,7 +6,8 @@ Smart agriculture calls for smart solutions, and this project—Smart Crop Healt
 
 What makes this project uniquely powerful is its integration with an IoT-based Agri-Guard module, which continuously monitors soil moisture, humidity, temperature, and rainfall using sensors connected to an ESP32 microcontroller. All this comes together in a user-friendly Flask web application where users can upload leaf images, check real-time sensor readings, receive immediate disease predictions, and even get treatment recommendations—all from one place.
 
-> 🎥 **DEMO VIDEO: https://drive.google.com/file/d/1gnx502asPW7duXmObUVft5g4DBHMJE10/view?usp=sharing**
+> 🎥 **DEMO VIDEO: https://drive.google.com/file/d/1gnx502asPW7duXmObUVft5g4DBHMJE10/view?usp=sharing    Iot➡️ https://drive.google.com/file/d/1h2DrvrxcVo3uGX7RqTAc2h5XjZ2U4wk4/view?usp=sharing**
+>           
 
 > 🔗 **LIVE LINK: https://agri-guard-infographic.vercel.app/**
 
